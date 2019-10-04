@@ -1,3 +1,4 @@
+console.log('start js');
 // Global variables
 var Rects;
 var e;
@@ -28,6 +29,7 @@ var allNotes = [
 
 var audioStrings = new Array(12);
 var audios = new Array(12);
+console.log('before preload');
 
 function preload(){
 	//audio = loadSound('soundfile.mp3');
@@ -35,7 +37,8 @@ function preload(){
 
 	for (var i = 0; i < allNotes.length; i++)
 	{
-		audioStrings[i] = soundType+'/'+allNotes[i]+".wav";
+		audioStrings[i] = "Processing/" + soundType+'/'+allNotes[i]+".wav";
+		console.log('audiostring ' + i + ': ' + audioStrings[i]);
 	}
 
 	//load audio files
@@ -43,15 +46,21 @@ function preload(){
 	{
 		console.log(audioStrings[i]);
 		audios[i] = loadSound(audioStrings[i]);
+		//alert('wait');
+		console.log(audios[i]);
 	}
-
+	console.log('end of preload');
 }
+console.log('in between');
 
 // Setup the Processing Canvas
 function setup(){
-
+	//alert('wait');
+	console.log('start of setup');
+	//setTimeout(function() {}, 2000);
 	var canvas = createCanvas(800, 800);
 	canvas.parent('pitch-perfect');
+	//canvas.parent('sketch-holder');
 
 	reloader = new Reloader(50, 50, 100, 100);
 
@@ -76,7 +85,7 @@ function setup(){
 	//audio.play();
 
 }//end of function setup(){}
-
+console.log('inbetween setup and draw');
 // Main draw loop
 function draw(){
 
@@ -127,11 +136,11 @@ function mouseMoved(){
 
 }//end of function mouseMoved(){}
 
-
+console.log('before rect button');
 class RectButton {
 
 	constructor (_x, _y, _width, _height, _note) {
-
+		console.log('new rect button');
 		this.x = _x;
 		this.y = _y;
 		this.width = _width;
@@ -184,7 +193,7 @@ class RectButton {
 
 }//end class RectButton
 
-
+console.log('before ellipse button');
 class EllipseButton {
 	constructor(_x, _y, _width, _height, _note) {
 		this.x = _x;
@@ -244,6 +253,7 @@ class EllipseButton {
 	}//end of draw(){
 }//end class EllipseButton {
 
+console.log('before reloader');
 class Reloader {
 	constructor(_x, _y, _width, _height, _note) {
 		this.x = _x;
@@ -289,6 +299,7 @@ class Reloader {
 	}//end of draw(){
 }//end class Reloader {
 
+console.log('before game maker');
 class GameMaker{
 	constructor(_folder){
 		this.folder = _folder;
@@ -301,8 +312,10 @@ class GameMaker{
 		var random = Math.floor(Math.random() * 4);
 		//console.log("main note = " + this.notes[random]);
 		mainNote = this.notes[random];
-		audio = loadSound(soundType + "/" + mainNote + ".wav");
+		audio = loadSound("Processing/" + soundType + "/" + mainNote + ".wav");
 		//audio = soundType+"/"+
 	}
 
 }//end class GameMaker{
+
+console.log('after game maker');

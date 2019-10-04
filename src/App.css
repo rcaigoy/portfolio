@@ -1,71 +1,14 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 .App {
   clear: both;
-
-}
-
-.Menu {
-  clear: both;
-  width: 100%;
-  height:50px;
-  margin-top: 0;
+  background-color: white;
+  width:90%;
   margin: 0 auto;
-  display: flex;
-  align-self: center;
-  background-color: rgba(0, 20, 5, 0.8);
-}
-
-.Logo {
-  font-size: 36px;
-  margin-left: 10%;
-  clear: both;
-  align-self: center;
-  min-width: 200px;
-}
-
-.Menu-Navigation {
-  font-size: 24px;
-  margin: 0 auto;
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  flex-flow: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.Menu-Link {
-  padding: 20px;
-}
-
-@media(max-width: 600px){
-  .Menu {
-    clear: both;
-    display: flex;
-    text-align: center;
-
-  }
-  .Logo{
-    margin: 0 auto;
-    font-size: 36px;
-    display: flex;
-    align-self: center;
-    min-width: 200px;
-  }
-
-  .Menu-Navigation {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .Profile-Picture {
   position: absolute;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 50px;
   width: 300px;
   height: 400px;
@@ -117,7 +60,7 @@
 
 .Body-Content{
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -166,7 +109,7 @@
   border: 1px solid black;
   min-width: 200px;
   min-height: 200px;
-  margin: 40px;
+  margin: 40px 20px;
   padding: 40px;
   display: flex;
   flex-direction: column;

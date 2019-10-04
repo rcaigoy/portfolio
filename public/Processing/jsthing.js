@@ -153,7 +153,7 @@ function setup(){
 
     //load all items into picture
 	var canvas = createCanvas(1200, 800);
-	canvas.parent('sketch-holder');
+	canvas.parent('canvas-holder');
 
 
     //setup character

@@ -5,9 +5,9 @@ import InteractivePortfolio from './InteractivePortfolio';
 import App from "./App";
 import AboutRyan from './About-Ryan/about-ryan';
 import NotFound from "./NotFound";
-import Menu from './Menu';
+import Menu from './Menu/Menu';
 import Websites from './Websites';
-import PitchPerfect from './PitchPerfectPage';
+import PitchPerfect from './PitchPerfect/PitchPerfectPage';
 
 const Router = () => (
   <BrowserRouter>
