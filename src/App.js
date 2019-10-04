@@ -2,23 +2,33 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//added
+import AboutMe from './AboutMe';
+import LinksHolder from './LinksHolder';
+
+
 function App() {
   return (
     <div className="App">
+      <div className="Profile-Picture">
+        PorfilePicture
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>
+          <div className="Name">Ryan Caigoy</div>
+          <br />
+          Web Application Developer
+          <br />
+          Portfolio
+          <br />
+        </h1>
       </header>
+
+      <div className="Body-Content">
+        <AboutMe />
+        <LinksHolder />
+      </div>
+
     </div>
   );
 }
