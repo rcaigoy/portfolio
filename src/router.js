@@ -7,6 +7,7 @@ import AboutRyan from './About-Ryan/about-ryan';
 import NotFound from "./NotFound";
 import Menu from './Menu';
 import Websites from './Websites';
+import PitchPerfect from './PitchPerfectPage';
 
 const Router = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = () => (
       <Route path="/About-Ryan" component={AboutRyan} />
       <Route path="/Interactive-Portfolio" component={InteractivePortfolio} />
       <Route path="/Websites" component={Websites} />
+      <Route path="/pitch-Perfect" component={PitchPerfect} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

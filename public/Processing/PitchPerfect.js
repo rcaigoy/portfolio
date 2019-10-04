@@ -56,8 +56,6 @@ function setup(){
 	reloader = new Reloader(50, 50, 100, 100);
 
 	imageMode(CENTER);
-
-
   	
   	ellipseX = 0;
 	ellipseY = 0;
