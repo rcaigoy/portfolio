@@ -6,9 +6,9 @@ function LinksHolder(){
         <div className="Links-Holder">
             <div className="Link-Row">
                 <a href="/Interactive-Portfolio" className="Link">Interactive Portfolio</a>
-                <ProfileLink link="something" text="Projects" />
+                <ProfileLink link="/Projects" text="Projects" />
                 <ProfileLink link="/Websites" text="Websites"/>
-                <ProfileLink link="nothing" text="Git Hub" />
+                <a href="https://github.com/rcaigoy" className="Link" target="_blank">Git Hub</a>
                 <ProfileLink link="something" text="Blogs" />
                 <ProfileLink link="something" text="Resume" />
                 <ProfileLink link="nothing" text="Links" />

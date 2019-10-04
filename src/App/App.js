@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
 
 //added
 import AboutMe from './AboutMe';
-import LinksHolder from './LinksHolder';
+import LinksHolder from '../LinksHolder';
 
 
 function App() {

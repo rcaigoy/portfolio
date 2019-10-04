@@ -1,9 +1,9 @@
 
 .App {
   clear: both;
-  background-color: white;
   width:90%;
   margin: 0 auto;
+  background-color: white;
 }
 
 .Profile-Picture {
@@ -59,6 +59,7 @@
 }
 
 .Body-Content{
+  background-color: white;
   margin: 0 auto;
   width: 90%;
   display: flex;
