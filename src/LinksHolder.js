@@ -5,9 +5,9 @@ function LinksHolder(){
     return(
         <div className="Links-Holder">
             <div className="Link-Row">
-                <ProfileLink link="/Interactive-Portfolio" text="Interactive Portfolio"/>
+                <a href="/Interactive-Portfolio" className="Link">Interactive Portfolio</a>
                 <ProfileLink link="something" text="Projects" />
-                <ProfileLink link="nothing" text="Websites"/>
+                <ProfileLink link="/Websites" text="Websites"/>
                 <ProfileLink link="nothing" text="Git Hub" />
                 <ProfileLink link="something" text="Blogs" />
                 <ProfileLink link="something" text="Resume" />
