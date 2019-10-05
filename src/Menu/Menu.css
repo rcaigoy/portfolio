@@ -66,6 +66,20 @@
       background-color: rgba(14, 36, 20, 0.8);
   }
 
+  .Body-Content{
+    background-color: white;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media(max-width: 600px){
+    .Body-Content{
+      width: 90%;
+    }
+  }
+
   /* global canvas settings */
 
   #defaultCanvas0, canvas {

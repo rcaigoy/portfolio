@@ -9,26 +9,26 @@ import LinksHolder from '../LinksHolder';
 
 function App() {
   return (
-    <div className="App">
-      <div className="Profile-Picture">
-        PorfilePicture
-      </div>
-      <header className="App-header">
-        <h1>
-          <div className="Name">Ryan Caigoy</div>
-          <br />
-          Web Application Developer
-          <br />
-          Portfolio
-          <br />
-        </h1>
-      </header>
+    <div className="Body-Content">
+      <div className="App">
+        <div className="Profile-Picture">
+          PorfilePicture
+        </div>
+        <header className="App-header">
+          <h1>
+            <div className="Name">Ryan Caigoy</div>
+            <br />
+            Web Application Developer
+            <br />
+            Portfolio
+            <br />
+          </h1>
+        </header>
 
-      <div className="Body-Content">
         <AboutMe />
         <LinksHolder />
-      </div>
 
+      </div>
     </div>
   );
 }
