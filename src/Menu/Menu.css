@@ -60,6 +60,13 @@
     }
   }
 
+  /* global title header settings */
+
+  h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+
   /* global Body setting */
 
   body {
@@ -88,6 +95,18 @@
       justify-content: center;
   }
 
+  #canvas-holder {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    
+  }
+  .Controls {
+    width: 1200px;
+    align-self: center;
+    background: #eee;
+  }
 
   /* default images class setting */
 
@@ -144,5 +163,12 @@
   @media (max-width: 900px){
     .Link-Row {
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 1200px){
+    .Controls {
+      width: 1200px;
+      text-align: center;
     }
   }

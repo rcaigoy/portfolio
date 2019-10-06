@@ -6,19 +6,13 @@ import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenSho
 function Websites() {
     return (
     <div className="Body-Content">
+        <h1>Websites</h1>
+        <br />
         <div className="Link-Row">
-            <ProfileLink link="/Interactive-Portfolio"
-                pic={InteractivePortfolioPicture}
-                text="Interactive Portfolio"
-                IsExternal="true"
-            />
-            <a href="/pitch-perfect" className="Link">Pitch Perfect</a>
-            <ProfileLink link="nothing" text="nothing"/>
-            <ProfileLink link="nothing" text="Git Hub" />
-            <ProfileLink link="something" text="Blogs" />
-            <ProfileLink link="something" text="Resume" />
-            <ProfileLink link="nothing" text="Links" />
-            <ProfileLink link="/About-Ryan" text="About Ryan" />
+            <ProfileLink link="nothing" text="Caigoy Creations"/>
+            <ProfileLink link="nothing" text="Pan-Asian Recovery Alliance" />
+            <ProfileLink link="something" text="KBCrush Media" />
+            <ProfileLink link="something" text="Art World" />
         </div>
     </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileLink from './ProfileLink';
 import InteractivePortfolioPicture from './images/InteractivePortfolioScreenShot.JPG';
+import GitHubPicture from './images/GitHub.jpg';
 
 function LinksHolder(){
     return(
@@ -18,6 +19,7 @@ function LinksHolder(){
                     text="Git Hub"
                     IsExternal="true"
                     target="_blank"
+                    pic={GitHubPicture}
                 />
                 <ProfileLink link="something" text="Blogs" />
                 <ProfileLink link="something" text="Resume" />

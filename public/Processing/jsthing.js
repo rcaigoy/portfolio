@@ -4,6 +4,8 @@ var counter; //used for timing purposes
 var XPosition; //used for spacing purposes
 var YPosition; //used for character jumping
 
+//Character Information
+var CharacterSpeed = 12;
 var characterSprite;
 var character;
 var characterWalkFrames = [
@@ -107,16 +109,22 @@ var saluteCounter;
 
 var characterJumpHold;
 
-var bg1;
-var mobileStreet;
 
+//Level 1 Work
+var mobileWork
+
+//Level 2 Library
 var bg2;
 var mobileLibrary;
 
+//Level 3 Freelance
 var bg3;
-var mobileWork
+var mobileStreet;
+
 
 function preload() {
+
+    //Character preload
     characterSpriteWalk = loadSpriteSheet('/Processing/Pictures/RyanSprite.png', characterWalkFrames);
     characterWalk = loadAnimation(characterSpriteWalk);
 
@@ -140,12 +148,17 @@ function preload() {
     characterSpriteSalute = loadSpriteSheet('/Processing/Pictures/RyanSprite.png', characterSaluteFrames);
     characterSalute = loadAnimation(characterSpriteSalute);
 
-    bg1 = loadImage('/Processing/Pictures/SunnyBackgroundCut.jpeg');
-    bg2 = loadImage('/Processing/Pictures/LibraryBackground.jpeg');
-
-    mobileStreet = loadImage('/Processing/Pictures/StreetMobile.png');
+    //Level 1 Work
     mobileWork = loadImage('/Processing/Pictures/WorkMobile.png');
-    mobileLibrary = loadImage('/Processing/Pictures/LibraryMobile.png');
+
+    //Level 2 Library
+    bg2 = loadImage('/Processing/Pictures/LibraryBackground.jpeg');
+    mobileLibrary = loadImage('/Processing/Pictures/LibraryMobile.jpg');
+
+    //Level 3 Freelance
+    bg3 = loadImage('/Processing/Pictures/SunnyBackgroundCut.jpeg');
+    mobileStreet = loadImage('/Processing/Pictures/StreetMobile.png');
+
 }
 
 // Setup the Processing Canvas
@@ -185,24 +198,29 @@ function setup(){
 function draw() {
     clear();
 
-    //Character Sprites
+    //Levels
+    //Level 1
     if (XPosition >= 0 && XPosition < 9000) {
         //mobileWork.resize(5076, 1100);
         image(mobileWork, -XPosition, 0);
     }
-    else if (XPosition >= 9000 && XPosition < 15000) {
+    //Level2
+    else if (XPosition >= 9000 && XPosition < 12000) {
         background(bg2);
-        mobileLibrary.resize(2384, 698);
-        image(mobileLibrary, 12000 - XPosition, height / 2);
-        image(mobileLibrary, 2384 + 12000 - XPosition, height / 2);
+        mobileLibrary.resize(2384, 500);
+        image(mobileLibrary, 9000 - XPosition, height*2/5);
+        image(mobileLibrary, 11384 - XPosition, height*2/5);
     }
-    else if (XPosition >= 15000 && XPosition < 18000) {
-        background(bg1);
-        image(mobileStreet, 15000 - XPosition, 386);
+    else if (XPosition >= 12000 && XPosition <= 21000) {
+        background(bg3);
+        image(mobileStreet, 12000 - XPosition, height-223);
     }
-    else if (XPosition >= 18000) {
-        XPosition = 0;
+    else if (XPosition > 21000) {
+        XPosition = 21000;
+        background(bg3);
+        image(mobileStreet, 12000 - XPosition, height-223);
     }
+    
     
 
 
@@ -213,30 +231,49 @@ function draw() {
 
     if (!inAir) {
         if (keyIsDown(RIGHT_ARROW)) {
-            XPosition += 12;
+            XPosition += CharacterSpeed;
             character.mirrorX(1);
             character.changeAnimation('walk');
-
+            //Moon walk if M pressed
+            if (keyCode == 109 || keyCode == 77){
+                character.mirrorX(-1);
+            }
             standCounter = 0;
         }
         else if (keyIsDown(LEFT_ARROW) && XPosition > 0) {
-            XPosition -= 12;
+            XPosition -= CharacterSpeed;
             character.mirrorX(-1);
             character.changeAnimation('walk');
+            //Moon walk if M pressed
+            if (keyCode == 109 || keyCode == 77){
+                character.mirrorX(1);
+            }
+            standCounter = 0;
+        }
+        else if (keyCode == 119 || keyCode == 87){
+            character.changeAnimation('wave');
+            standCounter = 0;
+        }
+        else if (keyCode == 112 || keyCode == 80){
+            character.changeAnimation('phone');
+            standCounter = 0;
+        }
+        else if (keyCode == 115 || keyCode == 83){
+            character.changeAnimation('salute');
             standCounter = 0;
         }
         else {
-            if (standCounter < 240) {
+            if (standCounter < 120) {
                 character.changeAnimation('stand');
                 standCounter++;
                 waveCounter = 0;
             }
-            else if (waveCounter < 240) {
+            else if (waveCounter < 180) {
                 character.changeAnimation('wave');
                 waveCounter++;
                 phoneCounter = 0;
             }
-            else if (phoneCounter < 240) {
+            else if (phoneCounter < 180) {
                 character.changeAnimation('phone');
                 phoneCounter++;
                 saluteCounter = 0;
@@ -260,20 +297,21 @@ function draw() {
             character.changeAnimation('jumpHold');
         }
         if (keyIsDown(RIGHT_ARROW)) {
-            XPosition += 12;
+            XPosition += CharacterSpeed;
             character.mirrorX(1);
-            //character.changeAnimation('walk');
 
             standCounter = 0;
         }
         else if (keyIsDown(LEFT_ARROW) && XPosition > 0) {
-            XPosition -= 12;
+            XPosition -= CharacterSpeed;
             character.mirrorX(-1);
+
             //character.changeAnimation('walk');
             standCounter = 0;
         }
-        
     }
+
+
 
     if (inAir) {
         jump();

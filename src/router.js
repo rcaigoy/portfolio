@@ -21,7 +21,7 @@ const Router = () => (
       <Route path="/Interactive-Portfolio" component={InteractivePortfolio} />
       <Route path="/Websites" component={Websites} />
       <Route path="/Blogs" component={BlogsRouter} />
-      <Route path="/pitch-Perfect" component={PitchPerfect} />
+      <Route path="/Pitch-Perfect" component={PitchPerfect} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
