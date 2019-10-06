@@ -9,6 +9,7 @@ import Menu from './Menu/Menu';
 import Websites from './Websites/Websites';
 import Projects from './Projects/Projects';
 import PitchPerfect from './PitchPerfect/PitchPerfectPage';
+import BlogsRouter from './Blogs/BlogsRouter';
 
 const Router = () => (
   <BrowserRouter>
@@ -19,6 +20,7 @@ const Router = () => (
       <Route path="/Projects" component={Projects} />
       <Route path="/Interactive-Portfolio" component={InteractivePortfolio} />
       <Route path="/Websites" component={Websites} />
+      <Route path="/Blogs" component={BlogsRouter} />
       <Route path="/pitch-Perfect" component={PitchPerfect} />
       <Route component={NotFound} />
     </Switch>

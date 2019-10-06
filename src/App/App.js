@@ -5,7 +5,7 @@ import './App.css';
 //added
 import AboutMe from './AboutMe';
 import LinksHolder from '../LinksHolder';
-import ProfilePicture from '../images/profilepictureSlim.JPG';
+import ProfilePicture from '../images/profilepictureSlim.jpg';
 
 
 function App() {

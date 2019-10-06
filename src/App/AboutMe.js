@@ -4,9 +4,13 @@ function AboutMe(){
     return(
         <div className="About-Me">
             <p>
-            Hello, My name is Ryan 
-            and I'm an aspiring full 
-            stack developer</p>
+                Hello, My name is Ryan 
+                and I'm an aspiring full 
+                stack developer
+            </p>
+            
+            <br />
+
             <p>
                 My primary skill set 
                 is in asp.net backend 

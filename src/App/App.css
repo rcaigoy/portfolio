@@ -47,7 +47,7 @@
 
 
 
-
+/* Desktop to Tablet*/
 @media(max-width: 1800px){
   .App-header{
     margin-left: 400px;
@@ -57,6 +57,7 @@
   }
 }
 
+/* Phone*/
 @media(max-width: 900px){
   .Profile-Picture {
     margin: 0 auto;
@@ -68,9 +69,11 @@
   }
 
   .App-header{
-    margin-left: 0px;
+    margin: 0 20px;
+    width: 85%;
   }
   .About-Me {
     margin-left: 0px;
+    width: 85%;
   }
 }
