@@ -19,7 +19,15 @@ function InteractivePortfolio() {
                 Press P to look at Phone
                 <br />
                 Press M while walking to moonwalk
+                <br />
+                <br />
+                <label>Character Speed</label>
+                <br />
+                <input type="range" id="CharacterSpeedRange" name="CharacterSpeedRange"
+                min="12" max="62" step="5" defaultValue="12"
+                />
             </div>
+            
         </div>
     );
 }

@@ -1,3 +1,6 @@
+//input
+var input;
+
 // Global variables
 var counter; //used for timing purposes
 
@@ -153,7 +156,7 @@ function preload() {
 
     //Level 2 Library
     bg2 = loadImage('/Processing/Pictures/LibraryBackground.jpeg');
-    mobileLibrary = loadImage('/Processing/Pictures/LibraryMobile.jpg');
+    mobileLibrary = loadImage('/Processing/Pictures/LibraryMobile.png');
 
     //Level 3 Freelance
     bg3 = loadImage('/Processing/Pictures/SunnyBackgroundCut.jpeg');
@@ -207,9 +210,9 @@ function draw() {
     //Level2
     else if (XPosition >= 9000 && XPosition < 12000) {
         background(bg2);
-        mobileLibrary.resize(2384, 500);
+        mobileLibrary.resize(4768, 500);
         image(mobileLibrary, 9000 - XPosition, height*2/5);
-        image(mobileLibrary, 11384 - XPosition, height*2/5);
+        //image(mobileLibrary, 11384 - XPosition, height*2/5);
     }
     else if (XPosition >= 12000 && XPosition <= 21000) {
         background(bg3);
@@ -227,10 +230,11 @@ function draw() {
     //animate sprite sheets
     drawSprites();
 
-    counter++;
+    CharacterSpeed = parseInt(CharacterSpeedRange.value, 10);
 
+    counter++;
     if (!inAir) {
-        if (keyIsDown(RIGHT_ARROW)) {
+        if (keyIsDown(RIGHT_ARROW) && XPosition < 21000) {
             XPosition += CharacterSpeed;
             character.mirrorX(1);
             character.changeAnimation('walk');
