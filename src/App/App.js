@@ -5,15 +5,14 @@ import './App.css';
 //added
 import AboutMe from './AboutMe';
 import LinksHolder from '../LinksHolder';
+import ProfilePicture from '../images/profilepictureSlim.JPG';
 
 
 function App() {
   return (
     <div className="Body-Content">
       <div className="App">
-        <div className="Profile-Picture">
-          PorfilePicture
-        </div>
+          <img src={ProfilePicture} className="Profile-Picture" />
         <header className="App-header">
           <h1>
             <div className="Name">Ryan Caigoy</div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import './InteractivePortfolio.css';
 
 function InteractivePortfolio() {
     return(

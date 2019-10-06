@@ -1,12 +1,17 @@
 import React from 'react';
 import ProfileLink from '../ProfileLink';
 import '../App/App.css';
+import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenShot.JPG';
 
 function Websites() {
     return (
     <div className="Body-Content">
         <div className="Link-Row">
-            <a href="/Interactive-Portfolio" className="Link">Interactive Portfolio</a>
+            <ProfileLink link="/Interactive-Portfolio"
+                pic={InteractivePortfolioPicture}
+                text="Interactive Portfolio"
+                IsExternal="true"
+            />
             <a href="/pitch-perfect" className="Link">Pitch Perfect</a>
             <ProfileLink link="nothing" text="nothing"/>
             <ProfileLink link="nothing" text="Git Hub" />
