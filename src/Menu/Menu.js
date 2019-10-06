@@ -5,7 +5,7 @@ import './Menu.css';
 function Menu() {
     return (
         <div className="Menu">
-            <Link to="/" className="Logo">Logo</Link>
+            <Link to="/" className="Logo"><div className="Logo-Text">Ryan Caigoy</div></Link>
 
             <div className="Menu-Navigation">
                 <Link to="/" className="Menu-Link">Home</Link>
