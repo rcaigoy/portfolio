@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import Blogs from './Blogs';
-import ASPReview from './ASPReview';
+import ASPReview from './ASPNet/ASPReview';
 import './Blogs.css'
 
 function BlogsRouter() {

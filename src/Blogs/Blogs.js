@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import BlogLink from './BlogLink';
 import ProfileLink from '../ProfileLink';
-import ASPNetPic from './ASPNetPic.jpg';
+import ASPNetPic from './ASPNet/ASPNet.jpg';
+import MVCReview from './ASPNetMVC/ASPNetPic.jpg';
 
 function Blogs() {
     return (
@@ -18,6 +19,7 @@ function Blogs() {
                 />
                 <ProfileLink 
                     text="MVC Entity Review"
+                    pic={MVCReview}
                 />
                 <ProfileLink
                     text="API's and the Repository Pattern"

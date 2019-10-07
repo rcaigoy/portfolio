@@ -141,8 +141,13 @@ function ASPReview() {
 					</li>
 				</ul>
 			<p>
-				My favorite feature is the autocorrect and the variable/method checker
-				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				My favorite feature is the autocorrect and the variable/method checker. 
+				<br />
+				<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				Data structures (collections)
 				Asp.net fluent members around the globe refer to the data structures as collections
 				IEnumerables
@@ -156,14 +161,20 @@ function ASPReview() {
 				Overall C# is great.  I needed to learn C# this past year because it’s the language used along 
 				the internal servers at my work place.  Larger corporations seem to love using Microsoft servers 
 				because microsoft makes it pretty easy for hundreds, thousands, or even hundreds of thousands of 
-				employees to communicate with each other within a domain.  The only problem I have with C# is 
-				that because it’s mainly used on Microsoft Operating Systems, it might not be very appealing for 
-				smaller companies to want to use when they can’t afford multiple servers and an esx system 
-				(which makes windows hosting cheaper internally).  
+				employees to communicate with each other within a domain.  C# is 
+				mainly used on Microsoft Operating Systems, so it might not be very appealing for 
+				smaller companies to want to use.
 				Web hosting with Windows servers is also generally more 
 				expensive than linux hosting because windows servers require licensing from Microsoft, while 
-				linux is a free operating system.  For those wanting to build upon C#, it’s much easier to get a 
-				job in medium to large size corporations than smaller companies or startups.  
+				linux is a free operating system. 
+				<br /><br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				You can get around using IIS with ASP.Net Core, which is very similar.  I haven't tried hosting 
+				any asp.net core sites on linux, but google tells me it's possible.
+				For those wanting to build upon C#, it’s much easier to get a 
+				job in medium to large size corporations than smaller companies or startups.  It's 100% worth 
+				learning, especially if you're already an object oriented disciplined programmer.
 			</p>
 
 		</div>

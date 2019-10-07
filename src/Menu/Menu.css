@@ -80,9 +80,7 @@
   }
 
   /* global Body setting */
-#root {
-  z-index: 1;
-}
+
   body {
       background-color: rgba(14, 36, 20, 0.8);
   }
@@ -125,13 +123,14 @@
   /* default images class setting */
 
   .Link {
-    /* Border: 1px solid black; */
+    Border: 1px solid black;
     width: 300px;
     height: 300px;
     margin: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    border-radius: 50px;
   }
   
   .Link img {
@@ -139,7 +138,8 @@
     height: 85%;
     display: flex;
     align-self: flex-start;
-    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   
   .Link .Link-Text {
@@ -150,9 +150,9 @@
     text-align: center;
     background-color: #eee;
     border: 1px solid #ddd;
-    margin-top: -10px;
+    margin-top: -15px;
     padding: 3px 10px;
-    border-radius: 25px;
+    border-radius: 50px;
   }
 
   .Links-Holder {
