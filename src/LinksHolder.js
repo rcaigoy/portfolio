@@ -2,6 +2,8 @@ import React from 'react';
 import ProfileLink from './ProfileLink';
 import InteractivePortfolioPicture from './images/InteractivePortfolioScreenShot.JPG';
 import GitHubPicture from './images/GitHub.jpg';
+import AboutRyanThumbnail from './images/AboutRyanThumbnail.jpg';
+import AboutRyan from './About-Ryan/about-ryan';
 
 function LinksHolder(){
     return(
@@ -21,10 +23,14 @@ function LinksHolder(){
                     target="_blank"
                     pic={GitHubPicture}
                 />
-                <ProfileLink link="something" text="Blogs" />
+                <ProfileLink link="/Blogs" text="Blogs" />
                 <ProfileLink link="something" text="Resume" />
                 <ProfileLink link="nothing" text="Links" />
-                <ProfileLink link="/About-Ryan" text="About Ryan" />
+                <ProfileLink 
+                    link="/About-Ryan" 
+                    text="About Ryan" 
+                    pic={AboutRyanThumbnail}
+                />
             </div>
         </div>
     );

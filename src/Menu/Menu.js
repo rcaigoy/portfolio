@@ -5,11 +5,11 @@ import './Menu.css';
 function Menu() {
     return (
         <div className="Menu">
-            <Link to="/" className="Logo"><div className="Logo-Text">Ryan Caigoy</div></Link>
+            <Link to="/" className="Logo">Ryan Caigoy</Link>
 
             <div className="Menu-Navigation">
                 <Link to="/" className="Menu-Link">Home</Link>
-                <a href="Interactive-Portfolio">
+                <a href="Interactive-Portfolio" className="Menu-Link">
                     Interactive Portfolio
                 </a>
             </div>

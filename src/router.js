@@ -1,6 +1,8 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {browserHistory} from 'history';
+import ScrollToTop from './ScrollToTop';
+
 import InteractivePortfolio from './InteractivePortfolio/InteractivePortfolio';
 import App from "./App/App";
 import AboutRyan from './About-Ryan/about-ryan';
@@ -14,6 +16,7 @@ import BlogsRouter from './Blogs/BlogsRouter';
 const Router = () => (
   <BrowserRouter>
     <Menu />
+    <ScrollToTop />
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/About-Ryan" component={AboutRyan} />
