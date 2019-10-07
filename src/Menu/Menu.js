@@ -9,7 +9,7 @@ function Menu() {
 
             <div className="Menu-Navigation">
                 <Link to="/" className="Menu-Link">Home</Link>
-                <a href="Interactive-Portfolio" className="Menu-Link">
+                <a href="/Interactive-Portfolio" className="Menu-Link">
                     Interactive Portfolio
                 </a>
             </div>

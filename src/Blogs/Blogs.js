@@ -13,7 +13,7 @@ function Blogs() {
             <div className="Link-Row">
                 <ProfileLink 
                     link='/Blogs/ASPReview' 
-                    text="First Time Learning ASP.net Review" 
+                    text="First Time Learning ASP.NET Review" 
                     pic={ASPNetPic}
                 />
                 <ProfileLink 
