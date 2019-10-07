@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route , withRouter, Link} from 'react-router-dom';
+import ProfileLink from '../ProfileLink'
 
 function BlogLink(props){
     return (

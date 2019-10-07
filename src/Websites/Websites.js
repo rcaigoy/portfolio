@@ -6,8 +6,9 @@ import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenSho
 function Websites() {
     return (
     <div className="Body-Content">
+        <br /><br />
         <h1>Websites</h1>
-        <br />
+        <br /><br />
         <div className="Link-Row">
             <ProfileLink link="nothing" text="Caigoy Creations"/>
             <ProfileLink link="nothing" text="Pan-Asian Recovery Alliance" />
