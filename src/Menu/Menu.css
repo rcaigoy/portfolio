@@ -45,7 +45,7 @@
     color: white;
     background-color: #3b7a3b;
     border-radius: 25px;
-    margin: 0 10px;
+    margin: 0;
   }
 
   .Menu-Link-Hidden {
@@ -129,6 +129,7 @@
 
   body {
       background-color: rgba(14, 36, 20, 0.8);
+      width: 100%;
   }
 
   .Body-Content{
@@ -144,6 +145,7 @@
       width: 90%;
     }
   }
+
 
   /* global canvas settings */
 
@@ -254,6 +256,11 @@ ul {
   justify-content: flex-start;
 }
   
+@mdia(max-width: 600px){
+  .Left-Side-Text {
+    margin: 0;
+  }
+}
 
   @media (max-width: 900px){
     .Link-Row {
