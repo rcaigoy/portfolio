@@ -4,6 +4,7 @@ import InteractivePortfolioPicture from './images/InteractivePortfolioScreenShot
 import GitHubPicture from './images/GitHub.jpg';
 import AboutRyanThumbnail from './images/AboutRyanThumbnail.jpg';
 import AboutRyan from './About-Ryan/about-ryan';
+import WebsitesPic from './images/Websites.jpg';
 
 function LinksHolder(){
     return(
@@ -15,7 +16,11 @@ function LinksHolder(){
                     IsExternal="true"
                 />
                 <ProfileLink link="/Projects" text="Projects" />
-                <ProfileLink link="/Websites" text="Websites"/>
+                <ProfileLink 
+                    link="/Websites" 
+                    text="Websites"
+                    pic={WebsitesPic}
+                />
                 <ProfileLink 
                     link="https://github.com/rcaigoy"
                     text="Git Hub"

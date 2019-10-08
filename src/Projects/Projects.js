@@ -5,8 +5,9 @@ import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenSho
 function Project(){
     return (
     <div className="Body-Content">
+        <br /><br />
         <h1>Projects</h1>
-        <br />
+        <br /><br />
         <div className="Link-Row">
             <ProfileLink link="/Interactive-Portfolio"
                 pic={InteractivePortfolioPicture}
