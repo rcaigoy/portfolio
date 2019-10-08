@@ -35,7 +35,7 @@ class Menu extends React.Component{
                 <div className="Hamburger" 
                     onClick={() => this.ShowMenu(show)}
                 >
-                    <i className="fas fa-bars fa-2x"></i>
+                    <i className="fas fa-bars fa-lg"></i>
                 </div>
                 <Link to="/" className={this.state.MenuLink}
                 >Home</Link>
