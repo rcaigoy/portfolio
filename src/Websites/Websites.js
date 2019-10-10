@@ -11,7 +11,12 @@ function Websites() {
         <h1>Websites</h1>
         <br /><br />
         <div className="Link-Row">
-            <ProfileLink link="nothing" text="Caigoy Creations"/>
+            <ProfileLink 
+                link="http://www.caigoycreations.com" 
+                text="Caigoy Creations"
+                IsExternal="true"
+                target="_blank"
+            />
             <ProfileLink 
                 link="http://www.pan-asianrecovery.org" 
                 text="Pan-Asian Recovery Alliance" 
