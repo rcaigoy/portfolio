@@ -1,6 +1,8 @@
 import React from 'react';
 import ProfileLink from '../ProfileLink';
 import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenShot.JPG';
+import CaigoyCreationsProductDesigner from '../images/Caigoy Creations Product Designer.JPG'
+import PitchPerfect from '../images/PitchPerfect.jpg'
 
 function Project(){
     return (
@@ -14,13 +16,18 @@ function Project(){
                 text="Interactive Portfolio"
                 IsExternal="true"
             />
-            <ProfileLink 
-                link="/Pitch-Perfect"
+
+            <ProfileLink link="http://caigoycreations.com/products/create"
+                pic={CaigoyCreationsProductDesigner}
+                text="CC Product Designer"
+                IsExternal="true"
+            />
+
+            <ProfileLink link="/Pitch-Perfect"
+                pic={PitchPerfect}
                 text="Pitch Perfect"
                 IsExternal="true"
             />
-            <ProfileLink link="#" text="Swerve" />
-            <ProfileLink link="#" text="Fly Catcher" />
         </div>
     </div>
     );

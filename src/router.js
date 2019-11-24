@@ -12,6 +12,8 @@ import Websites from './Websites/Websites';
 import Projects from './Projects/Projects';
 import PitchPerfect from './PitchPerfect/PitchPerfectPage';
 import BlogsRouter from './Blogs/BlogsRouter';
+import WebsiteRequest from './Requests/WebsiteRequest.js'
+import Footer from './Footer/Footer'
 
 const Router = () => (
   <BrowserRouter>
@@ -25,8 +27,10 @@ const Router = () => (
       <Route path="/Websites" component={Websites} />
       <Route path="/Blogs" component={BlogsRouter} />
       <Route path="/Pitch-Perfect" component={PitchPerfect} />
+      <Route path="/requests/website" component={WebsiteRequest} />
       <Route component={NotFound} />
     </Switch>
+    <Footer />
   </BrowserRouter>
 );
 
