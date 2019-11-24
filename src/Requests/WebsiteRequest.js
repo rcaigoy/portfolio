@@ -210,6 +210,11 @@ const WebsiteRequest = () => {
             </div>
         </div>
 
+        <div className='NumberOfPages'>
+            <h2>How many pages do you estimate your website to be?</h2>
+            <input type='number' name='NumberOfPages' />
+        </div>
+
 
         <div className='DesignType'>
             <h2>Do you have a web design ready?</h2>
@@ -263,7 +268,7 @@ const WebsiteRequest = () => {
         <br /><br />
 
         <div className='ECommerce'>
-            Are you selling anything on this website?
+            <h2>Are you selling anything on this website?</h2>
             <input type='checkbox' name='ECommerce' />
             <br />
             <div className='ECommerceFeatures'>
@@ -293,6 +298,7 @@ const WebsiteRequest = () => {
 
         <div className='AdditonalComments'>
             Any Additional Comments Regarding this site?
+            <br />
             <textarea></textarea>
         </div>
 
