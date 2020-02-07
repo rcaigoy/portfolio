@@ -13,10 +13,9 @@ function AboutMe(){
 
             <p>
                 My primary skill set 
-                is in asp.net backend 
-                development and MS SQL, but I'm no
-                stranger to any computer
-                language.
+                is in C#, ASP .net backend 
+                development and MS SQL.  I also have experience in React.js and I'm no
+                stranger to any computer language.
             </p>
         </div>
     );

@@ -26,7 +26,8 @@ function App() {
 
         <AboutMe />
         <LinksHolder />
-
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
       </div>
     </div>
   );

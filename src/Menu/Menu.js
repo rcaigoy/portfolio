@@ -39,9 +39,13 @@ class Menu extends React.Component{
                 </div>
                 <Link to="/" className={this.state.MenuLink}
                 >Home</Link>
-                <a href="/Interactive-Portfolio" className={this.state.MenuLink}>
+                <a style={{minWidth: '210px'}} href="/Interactive-Portfolio" className={this.state.MenuLink}>
                     Interactive Portfolio
                 </a>
+                <Link to="/Projects" className={this.state.MenuLink}
+                >Projects</Link>
+                <Link to="/Websites" className={this.state.MenuLink}
+                >Websites</Link>
             </div>
         </div>
         );

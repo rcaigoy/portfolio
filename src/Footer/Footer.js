@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='PreFooter'
                 style={{
                     width: '100%',
-                    height: '100px',
+                    //height: '100px',
                     backgroundColor: '#3e4f43'
                 }}
             ></div>

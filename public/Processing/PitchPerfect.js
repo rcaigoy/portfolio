@@ -89,7 +89,8 @@ console.log('inbetween setup and draw');
 // Main draw loop
 function draw(){
 
-	background(199, 137, 244);
+	//background(199, 137, 244);
+	background(100, 100, 100);
 
 
 	var i;
@@ -171,7 +172,7 @@ class RectButton {
 			else
 			{
 				//sameClick = false;
-				fill (47, 68, 163);
+				fill (255, 255, 255);
 			}
 
 
@@ -179,7 +180,7 @@ class RectButton {
 		else
 		{
 			sameClick = false;
-			fill (47, 68, 163);
+			fill (255, 255, 255);
 		}
 		
 		rect(this.x, this.y, this.width, this.height);
@@ -241,7 +242,7 @@ class EllipseButton {
 		else
 		{
 			sameClick = false;
-			fill(242, 181, 228);
+			fill(0, 0, 255);
 		}
 		
 		ellipse(this.x, this.y, this.width, this.height);
@@ -282,13 +283,14 @@ class Reloader {
 				fill(0, 255, 0);
 			}//end if (d < 100);
 			else{
-				fill(85, 244, 228);
+				//fill(85, 244, 228);
+				fill(100, 0, 100);
 			}
 		}//end if (mouseIsPressed)
 		else
 		{
 			sameClick = false;
-			fill(85, 244, 228);
+			fill(100, 0, 100);
 		}
 		ellipse(this.x, this.y, this.width, this.height);
 		textSize(16);

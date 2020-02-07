@@ -1,11 +1,13 @@
 
 .App {
   clear: both;
-  margin: 0 auto;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+    background-color: #3e4f43;
+    text-shadow: 44px 32px 17px black;
 }
 
 .Profile-Picture {
@@ -14,6 +16,7 @@
   margin-top: 50px;
   width: 300px;
   height: 400px;
+  box-shadow: 44px 32px 38px black;
 }
 
 .App-header {
@@ -48,7 +51,7 @@
 
 
 /* Desktop to Tablet*/
-@media(max-width: 1800px){
+@media(max-width: 2000px){
   .App-header{
     margin-left: 400px;
   }

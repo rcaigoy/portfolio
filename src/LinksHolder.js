@@ -10,6 +10,8 @@ import CaigoyCreationsProductDesigner from './images/Caigoy Creations Product De
 function LinksHolder(){
     return(
         <div className="Links-Holder">
+            <br /><br />
+            <label style={{display: 'flex', justifyContent: 'center'}}>Click a link below!</label>
             <div className="Link-Row">
                 <ProfileLink link="/Interactive-Portfolio"
                     pic={InteractivePortfolioPicture}
@@ -17,14 +19,14 @@ function LinksHolder(){
                     IsExternal="true"
                 />
                 <ProfileLink link="/Projects" 
-                    pic={CaigoyCreationsProductDesigner}
+                    pic={WebsitesPic}
                     text="Projects"
                     IsExternal="true"
                 />
                 <ProfileLink 
                     link="/Websites" 
                     text="Websites"
-                    pic={WebsitesPic}
+                    pic={CaigoyCreationsProductDesigner}
                 />
                 <ProfileLink 
                     link="https://github.com/rcaigoy"

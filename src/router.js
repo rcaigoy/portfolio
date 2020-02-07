@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {browserHistory} from 'history';
 import ScrollToTop from './ScrollToTop';
@@ -15,7 +15,12 @@ import BlogsRouter from './Blogs/BlogsRouter';
 import WebsiteRequest from './Requests/WebsiteRequest.js'
 import Footer from './Footer/Footer'
 
-const Router = () => (
+const Router = props => {
+  var IsInteractive = window.location.href.includes("Interactive-Portfolio")
+  useEffect(() => {
+    var IsInteractive = window.location.href.includes("Interactive-Portfolio");
+  }, []);
+  return (
   <BrowserRouter>
     <Menu />
     <ScrollToTop />
@@ -30,8 +35,11 @@ const Router = () => (
       <Route path="/requests/website" component={WebsiteRequest} />
       <Route component={NotFound} />
     </Switch>
-    <Footer />
+    {!IsInteractive &&
+      <Footer />
+    }
   </BrowserRouter>
-);
+  )
+}
 
 export default Router;
