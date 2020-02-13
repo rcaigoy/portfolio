@@ -48,6 +48,7 @@
     text-decoration: none;
     color: white;
     margin: 0;
+    text-transform: uppercase;
   }
 
   .Menu-Link-Hidden {
@@ -56,13 +57,29 @@
     text-decoration: none;
     color: white;
     margin: 0 10px;
+    text-transform: uppercase;
   }
 
-  .Menu-Link:hover {
+  .Menu-Link-Hidden:hover, .Menu-Link:hover {
     text-decoration: underline;
   }
+
+  .LargeLink {
+    min-width: 282px;
+  }
+
+  @media(max-width: 1400px){
+    .Menu-Link{ 
+      font-size: 21px;
+      padding: 3px 10px;
+    }
+    .Menu-Link-Hidden {
+      font-size: 21px;
+      padding: 3px 10px;
+    }
+  }
   
-  @media(max-width: 1150px){
+  @media(max-width: 1200px){
     .Menu {
       clear: both;
       display: flex;
@@ -128,14 +145,19 @@
     text-align: center;
     font-size: 64px;
     color: white;
+    text-transform: uppercase;
   }
 
   /* global Body setting */
 
+  HTML {
+    scroll-behavior: smooth;
+  }
+
   body {
       background-color: black;
       width: 100%;
-      font-family: Arial;
+      font-family: 'Open Sans', sans-serif;
   }
 
   .Body-Content{
@@ -184,12 +206,15 @@
     height: 300px;
     margin: 40px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     /* border-radius: 50px; */
     background-color: white;
     /* background-color: #3e4f43; */
     box-shadow: 44px 32px 38px black;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
   }
   
   .Link img {
@@ -197,21 +222,33 @@
     height: 85%;
     display: flex;
     align-self: flex-start;
+    justify-items: flex-start;
     /*border-top-left-radius: 50px;
     border-top-right-radius: 50px;*/
   }
   
   .Link .Link-Text {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #005500;
-    position: absolute;
+    font-size: 20px;
     text-align: center;
-    background-color: #eee;
-    border: 1px solid #ddd;
-    margin-top: -15px;
     padding: 3px 10px;
     border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    color: black;
+    margin-top: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+  }
+
+
+  .Link .Link-Text:hover {
+    text-decoration: underline;
+    color: #6868a7;
+  }
+
+  .Link img:hover {
+    opacity: 0.5;
   }
 
   .Links-Holder {
@@ -246,12 +283,14 @@
     align-content: center;
 }
 
-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 80%;
-    margin: 20px;
+.About-Me p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  /* margin: 20px; */
+  margin-left: 50px;
+  text-align: center;
 }
 
 p img {
@@ -266,12 +305,31 @@ ul {
   width: 70%;
   justify-content: flex-start;
 }
-  
-@mdia(max-width: 600px){
-  .Left-Side-Text {
-    margin: 0;
+
+  @media (max-width: 1400px){
+
+    .Link {
+      width: 200px;
+      height: 200px;
+      margin: 40px 20px;
+      display: flex;
+      align-items: flex-end;
+      /* border-radius: 50px; */
+      background-color: white;
+      /* background-color: #3e4f43; */
+      box-shadow: 44px 32px 38px black;
+    }
+
+    .Link .Link-Text {
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    .Controls {
+      width: 1200px;
+      text-align: center;
+    }
   }
-}
 
   @media (max-width: 900px){
     .Link-Row {
@@ -279,9 +337,8 @@ ul {
     }
   }
 
-  @media (max-width: 1200px){
-    .Controls {
-      width: 1200px;
-      text-align: center;
+  @mdia(max-width: 600px){
+    .Left-Side-Text {
+      margin: 0;
     }
   }

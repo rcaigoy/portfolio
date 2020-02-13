@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from '../logo.svg';
 import './App.css';
 
@@ -9,25 +9,34 @@ import ProfilePicture from '../images/profilepictureSlim.jpg';
 
 
 function App() {
+  useEffect(() => {
+    const checkScroll = e => {
+      if (window.scrollY > window.pageYOffset){
+      console.log('off' + window.pageYOffset);
+      console.log('y' + window.scrollY);
+      }
+    }
+    window.addEventListener('scroll', checkScroll);
+  }, []);
   return (
     <div className="Body-Content">
       <div className="App">
           <img src={ProfilePicture} className="Profile-Picture" />
         <header className="App-header">
           <h1>
-            <div className="Name">Ryan Caigoy</div>
-            <br />
             Web Application Developer
-            <br />
-            Portfolio
             <br />
           </h1>
         </header>
 
-        <AboutMe />
+        <AboutMe className='AboutMeClass' />
+
+        <br /><br /><br /><br />
+
         <LinksHolder />
         <br /><br /><br /><br />
         <br /><br /><br /><br />
+        
       </div>
     </div>
   );

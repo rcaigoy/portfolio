@@ -4,6 +4,9 @@ import BlogLink from './BlogLink';
 import ProfileLink from '../ProfileLink';
 import ASPNetPic from './ASPNet/ASPNet.jpg';
 import MVCReviewPic from './ASPNetMVC/ASPNetPic.jpg';
+import Async from './Async/Asynchronous.jpg'
+import DefensiveCoding from './Defensive/DefensiveCoding.jpg'
+import API from './APIs/Swagger-logo.jpg'
 
 function Blogs() {
     return (
@@ -23,12 +26,15 @@ function Blogs() {
                 />
                 <ProfileLink
                     text="API's and the Repository Pattern"
+                    pic={API}
                 />
                 <ProfileLink
                     text="Asynchronous Coding in C#"
+                    pic={Async}
                 />
                 <ProfileLink
                     text="Levels of Defensive Coding"
+                    pic={DefensiveCoding}
                 />
                 <ProfileLink
                     text="Learning React.js"

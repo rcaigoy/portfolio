@@ -5,7 +5,10 @@ import GitHubPicture from './images/GitHub.jpg';
 import AboutRyanThumbnail from './images/AboutRyanThumbnail.jpg';
 import AboutRyan from './About-Ryan/about-ryan';
 import WebsitesPic from './images/Websites.jpg';
-import CaigoyCreationsProductDesigner from './images/Caigoy Creations Product Designer.JPG'
+import CaigoyCreationsProductDesigner from './images/CaigoyCreationsProductDesigner.JPG'
+import Blogs from './images/Blogs.jpg'
+import Resume from './images/Resume.JPG'
+import Hobbies from './images/Hobbies.jpg'
 
 function LinksHolder(){
     return(
@@ -35,9 +38,22 @@ function LinksHolder(){
                     target="_blank"
                     pic={GitHubPicture}
                 />
-                <ProfileLink link="/Blogs" text="Blogs" />
-                <ProfileLink link="something" text="Resume" />
-                <ProfileLink link="nothing" text="Links" />
+                <ProfileLink 
+                    link="/Blogs" 
+                    text="Blogs" 
+                    pic={Blogs}
+                />
+                <ProfileLink 
+                    link="/Resume.pdf" 
+                    text="Resume"
+                    pic={Resume}
+                    IsExternal="true"
+                />
+                <ProfileLink 
+                    link="/Hobies" 
+                    text="Hobbies" 
+                    pic={Hobbies}
+                />
                 <ProfileLink 
                     link="/About-Ryan" 
                     text="About Ryan" 

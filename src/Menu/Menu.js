@@ -6,22 +6,20 @@ var show = false;
 var MenuLink = 'Menu-Link';
 
 class Menu extends React.Component{
-
-    
     constructor() {
         super()
         this.state = {
-            MenuLink: 'Menu-Link',
+            MenuLink: 'Menu-Link-Hidden',
             show: false
         }
     }
 
     ShowMenu(){
-        if (this.state.show){
-            this.setState({show: false, MenuLink: 'Menu-Link'});
+        if (!this.state.show){
+            this.setState({show: true, MenuLink: 'Menu-Link'});
         }
         else {
-            this.setState({show: true, MenuLink: 'Menu-Link-Hidden'});
+            this.setState({show: false, MenuLink: 'Menu-Link-Hidden'});
         }
         //alert(MenuLink);
     }
@@ -39,7 +37,7 @@ class Menu extends React.Component{
                 </div>
                 <Link to="/" className={this.state.MenuLink}
                 >Home</Link>
-                <a style={{minWidth: '210px'}} href="/Interactive-Portfolio" className={this.state.MenuLink}>
+                <a href="/Interactive-Portfolio" className={this.state.MenuLink + ' LargeLink'}>
                     Interactive Portfolio
                 </a>
                 <Link to="/Projects" className={this.state.MenuLink}

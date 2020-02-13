@@ -4,18 +4,13 @@ function AboutMe(){
     return(
         <div className="About-Me">
             <p>
-                Hello, My name is Ryan 
-                and I'm an aspiring full 
-                stack developer
-            </p>
-            
-            <br />
-
-            <p>
-                My primary skill set 
+                &nbsp; &nbsp; Hello, My name is Ryan 
+                and I'm a full 
+                stack web developer. My primary skill set 
                 is in C#, ASP .net backend 
-                development and MS SQL.  I also have experience in React.js and I'm no
-                stranger to any computer language.
+                development, and MS SQL.  I also have experience in React.js 
+                and I have no problem adapting to 
+                any computer language.
             </p>
         </div>
     );

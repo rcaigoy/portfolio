@@ -1,3 +1,7 @@
+//mouse
+var blimp1 = false;
+var blimp2 = false;
+
 //input
 var input;
 
@@ -120,9 +124,10 @@ var mobileWork
 var bg2;
 var mobileLibrary;
 
-//Level 3 Freelance
+//Level 3 Fun
 var bg3;
 var mobileStreet;
+var blimpMUSIC;
 
 
 function preload() {
@@ -161,7 +166,8 @@ function preload() {
     //Level 3 Freelance
     bg3 = loadImage('/Processing/Pictures/SunnyBackgroundCut.jpeg');
     mobileStreet = loadImage('/Processing/Pictures/StreetMobile.png');
-
+    blimpMUSIC = loadImage('/Processing/Pictures/blimpMUSIC.png');
+    blimpSTEP = loadImage('/Processing/Pictures/blimpSTEP.png');
 }
 
 // Setup the Processing Canvas
@@ -214,15 +220,74 @@ function draw() {
         image(mobileLibrary, 9000 - XPosition, height*2/5);
         //image(mobileLibrary, 11384 - XPosition, height*2/5);
     }
+    //level 3
     else if (XPosition >= 12000 && XPosition <= 21000) {
+        
         background(bg3);
         image(mobileStreet, 12000 - XPosition, height-223);
+        blimpMUSIC.resize(473, 323);
+
+        //display blimp1
+        image(blimpMUSIC, 13500 - XPosition, 0);
+
+        //get XPosition logic
+        if (XPosition > 12330 && XPosition < 13940){
+            //display text sign
+            textSize(32);
+            textAlign(CENTER);
+            text('Click blimp to play music video', width/2, 40);
+            //click logic for music video
+            if (mouseY < height/4 && mouseY > 0){
+                blimp1 = true;
+            }
+            else{
+                blimp1 = false;
+            }
+        }
+        else {
+            blimp1 = false;
+        }
+
+        //blimp 2
+        blimpSTEP.resize(473, 323);
+
+        //display blimp 2
+        image(blimpSTEP, 15500 - XPosition, 0);
+        if (XPosition > 14350 && XPosition < 15940){
+            textSize(32);
+            textAlign(CENTER);
+            text('Click blimp to play UCI step squad video', width/2, 40);
+            //click logic for step video
+            if (mouseY < height/4 && mouseY > 0){
+                blimp2 = true;
+            }
+            else {
+                blimp2 = false;
+            }
+        }
+        else {
+            blimp2 = false;
+        }
+
+        console.log(XPosition);
     }
+    //level 3 part 2
     else if (XPosition > 21000) {
         XPosition = 21000;
         background(bg3);
-        image(mobileStreet, 12000 - XPosition, height-223);
+        image(mobileStreet, 21000 - XPosition, height-223);
+        //image(blimpMUSIC, 12000 - XPosition, height - 223);
     }
+    
+    /*
+    //level 3 part 3
+    else if (XPosition > 30000){
+        XPosition = 30000;
+        background(bg3);
+        image(mobileStreet, 30000 - XPosition, height-223);
+        //image(blimpMUSIC, 1200 - XPosition, height - 223);
+    }
+    */
     
     
 
@@ -334,6 +399,16 @@ function keyPressed(){
         //alert('hello');
     }
 }
+
+function mouseClicked(){
+    if (blimp1){
+        window.open('https://www.youtube.com/watch?v=2vJMs4zrA5E');
+    }
+    else if (blimp2){
+        window.open('https://www.youtube.com/watch?v=X-OlF2owxEw');
+    }
+}
+
 
 function jump() {
     if (jumpCounter > 20) {

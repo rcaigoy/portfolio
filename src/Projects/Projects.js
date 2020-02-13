@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileLink from '../ProfileLink';
 import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenShot.JPG';
-import CaigoyCreationsProductDesigner from '../images/Caigoy Creations Product Designer.JPG'
+import CaigoyCreationsProductDesigner from '../images/CaigoyCreationsProductDesigner.JPG'
 import PitchPerfect from '../images/PitchPerfect.jpg'
 
 function Project(){

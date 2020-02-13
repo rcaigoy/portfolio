@@ -20,6 +20,7 @@
 }
 
 .App-header {
+  margin-top: 50px;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -60,6 +61,45 @@
   }
 }
 
+@media(max-width: 1700px){
+  .App-header h1 {
+    font-size: 50px;
+  }
+  .About-Me {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 1400px){
+  .Profile-Picture {
+    width: 200px;
+    height: 270px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .App-header{
+    margin-left: 200px;
+  }
+  .About-Me {
+    margin-left: 250px;
+  }
+}
+
+@media(max-width: 1300px){
+  .App-header{
+    margin-left: 250px;
+  }
+}
+
+@media(max-width: 1200px){
+  .App-header{
+    margin-left: 250px;
+  }
+  .About-Me {
+    margin-left: 250px;
+  }
+}
+
 /* Phone*/
 @media(max-width: 900px){
   .Profile-Picture {
@@ -69,15 +109,23 @@
     display: flex;
     flex-direction: column;
     align-self: center;
+    margin-top: 25px;
   }
 
   .App-header{
-    margin: 0 20px;
+    margin: 20px 20px 0 20px;
     width: 85%;
   }
+  .App-header h1 {
+    font-size: 36px;
+  }
+
   .About-Me {
     margin: 0 10px;
     padding: 0;
     width: 90%;
+  }
+  .About-Me p {
+    font-size: 18px;
   }
 }
