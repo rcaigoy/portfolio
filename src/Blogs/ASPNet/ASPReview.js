@@ -76,9 +76,11 @@ function ASPReview() {
 				We use this for changing connections to different databases, URL’s, changing the admin list of 
 				sites, and even stating if the website is in test mode or production mode.  
 			</p>
-			<p>
+			<br />
+			<h2>
 				Syntax differences from other Object Oriented Languages:
-			</p>
+			</h2>
+			<p>
 				<ul>
 					<li>
 						Inherit with `:` 
@@ -125,10 +127,13 @@ function ASPReview() {
 						Easy to import another project into references
 					</li>
 				</ul>
+			</p>
+
 			<p>
 				Visual studio
 				A few key functions that are useful, but aren’t used in other places
 			</p>
+			<p>
 				<ul>
 					<li>
 						Git has an easy GUI
@@ -140,6 +145,8 @@ function ASPReview() {
 						Very good code autocorrect
 					</li>
 				</ul>
+			</p>
+			
 			<p>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

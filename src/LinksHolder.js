@@ -47,6 +47,7 @@ function LinksHolder(){
                     link="/Resume.pdf" 
                     text="Resume"
                     pic={Resume}
+                    target="_blank"
                     IsExternal="true"
                 />
                 <ProfileLink 

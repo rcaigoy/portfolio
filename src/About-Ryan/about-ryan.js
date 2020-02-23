@@ -7,7 +7,6 @@ function AboutRyan() {
         <div className="Body-Content">
             <br /><br />
             <h1>About Ryan</h1>
-            <hr />
             <br /><br />
 
             <div className="Blog">
@@ -18,15 +17,16 @@ function AboutRyan() {
                 }}>
 
             </img>
-                <p className="Blog-Paragraph">
-                    I’ve been coding since 2010 after I took a 
-                    computer science course in C.  I didn't think 
-                    I was cut out for coding because it took me hours to 
-                    figure out some of the most basic concepts.  
-                    But I absolutely loved it.  Now I code 
-                    for a living as a back end developer at 
-                    Applied Medical.
-                </p>
+            <br />
+            <p>
+                I’ve been coding since 2010 after I took a 
+                computer science course in C.  I didn't think 
+                I was cut out for coding because it took me hours to 
+                figure out some of the most basic concepts.  
+                But I absolutely loved it.  Now I code 
+                for a living as a back end developer at 
+                Applied Medical.
+            </p>
                 <p>
                     I was drum line captain in high school so 
                     I have a high rhythmic and musical background.  
@@ -97,7 +97,10 @@ function AboutRyan() {
                 <p>
                     So yes, I had way too many responsibilities at one point and even 
                     though I am blessed to have learned so much in IT, I decided it was 
-                    time to become a full time back-end developer.  
+                    time to become a full time back-end developer.  Although I specialize 
+                    in C# and .net back end server development, I've successfully finished 
+                    more than 10 different web project.
+                    
                 </p>
             </div>
         </div>

@@ -14,6 +14,7 @@ import PitchPerfect from './PitchPerfect/PitchPerfectPage';
 import BlogsRouter from './Blogs/BlogsRouter';
 import WebsiteRequest from './Requests/WebsiteRequest.js'
 import Footer from './Footer/Footer'
+import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy'
 
 const Router = props => {
   var IsInteractive = window.location.href.includes("Interactive-Portfolio")
@@ -33,6 +34,7 @@ const Router = props => {
       <Route path="/Blogs" component={BlogsRouter} />
       <Route path="/Pitch-Perfect" component={PitchPerfect} />
       <Route path="/requests/website" component={WebsiteRequest} />
+      <Route path="/Privacy-Policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
     {!IsInteractive &&

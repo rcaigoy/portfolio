@@ -7,6 +7,7 @@ import MVCReviewPic from './ASPNetMVC/ASPNetPic.jpg';
 import Async from './Async/Asynchronous.jpg'
 import DefensiveCoding from './Defensive/DefensiveCoding.jpg'
 import API from './APIs/Swagger-logo.jpg'
+import LearningReact from './LearningReact/LearningReact.png'
 
 function Blogs() {
     return (
@@ -21,23 +22,28 @@ function Blogs() {
                     pic={ASPNetPic}
                 />
                 <ProfileLink 
+                    link='/Blogs/MVC-and-Entity'
                     text="MVC Entity Review"
                     pic={MVCReviewPic}
                 />
                 <ProfileLink
+                    link='/Blogs/APIs-and-the-repository-pattern'
                     text="API's and the Repository Pattern"
                     pic={API}
                 />
                 <ProfileLink
+                    link='/Blogs/Asynchronous-C-Sharp'
                     text="Asynchronous Coding in C#"
                     pic={Async}
                 />
                 <ProfileLink
+                    link='/Blogs/Levels-of-defensive-coding'
                     text="Levels of Defensive Coding"
                     pic={DefensiveCoding}
                 />
                 <ProfileLink
                     text="Learning React.js"
+                    pic={LearningReact}
                 />
             </div>
         </div>
