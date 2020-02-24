@@ -24,7 +24,7 @@ function LinksHolder(){
                 <ProfileLink link="/Projects" 
                     pic={WebsitesPic}
                     text="Projects"
-                    IsExternal="true"
+                    //IsExternal="true"
                 />
                 <ProfileLink 
                     link="/Websites" 
