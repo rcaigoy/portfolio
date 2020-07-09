@@ -31,7 +31,7 @@ function App() {
 
         <AboutMe className='AboutMeClass' />
 
-        <br /><br /><br /><br />
+        {/* <br /><br /><br /><br /> */}
 
         <LinksHolder />
         <br /><br /><br /><br />

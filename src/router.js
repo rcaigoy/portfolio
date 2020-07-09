@@ -35,6 +35,18 @@ const Router = props => {
       <Route path="/Pitch-Perfect" component={PitchPerfect} />
       <Route path="/requests/website" component={WebsiteRequest} />
       <Route path="/Privacy-Policy" component={PrivacyPolicy} />
+      <Route path="/MVCCodingCourse" 
+        component={() => { 
+          window.location.href = 'https://www.udemy.com/course/building-a-full-website-in-c-sharp/?couponCode=9633C98C893D5AD6348E'; 
+          return null;
+        }}
+      />
+      <Route path="/ProgrammingFundamentals"
+        component={() => { 
+          window.location.href = 'https://www.udemy.com/course/c-sharp-programming-fundamentals/?couponCode=9CCFD74BF22D67646F4E'; 
+          return null;
+        }}
+      />
       <Route component={NotFound} />
     </Switch>
     {!IsInteractive &&

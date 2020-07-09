@@ -146,6 +146,7 @@
     font-size: 64px;
     color: white;
     text-transform: uppercase;
+    padding: 20px;
   }
 
   /* global Body setting */
@@ -308,7 +309,7 @@
   justify-content: flex-start;
   width: 80%;
   /* margin: 20px; */
-  margin-left: 50px;
+  /* margin-left: 50px; */
   text-align: center;
 }
 
