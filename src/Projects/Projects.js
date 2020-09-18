@@ -4,6 +4,8 @@ import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenSho
 import CaigoyCreationsProductDesigner from '../images/CaigoyCreationsProductDesigner.JPG'
 import PitchPerfect from '../images/PitchPerfect.jpg'
 import CloudCardsApp from '../images/CloudCardsApp.JPG'
+import Udemy1 from '../images/Udemy1.JPG'
+import Udemy2 from '../images/Udemy2.JPG'
 
 function Project(){
     return (
@@ -29,6 +31,20 @@ function Project(){
                 pic={CloudCardsApp}
                 text="Cloud Cards App"
                 IsExternal="true"
+            />
+
+            <ProfileLink
+                link='https://www.udemy.com/course/c-sharp-programming-fundamentals/'
+                pic={Udemy1}
+                text='Udemy (instructor)'
+                IsExternal='true'
+            />
+
+            <ProfileLink
+                link='https://www.udemy.com/course/building-a-full-website-in-c-sharp/'
+                pic={Udemy2}
+                text='Udemy (instructor)'
+                IsExternal='true'
             />
 
             <ProfileLink link="/Pitch-Perfect"
