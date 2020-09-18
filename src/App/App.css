@@ -7,19 +7,19 @@
     align-content: center;
     color: white;
     background-color: #3e4f43;
-    text-shadow: 44px 32px 17px black;
+    text-shadow: 11px 8px 16px black;
 }
 
 .Profile-Picture {
-  position: absolute;
   margin-left: 50px;
   margin-top: 50px;
   width: 300px;
   height: 400px;
-  box-shadow: 44px 32px 38px black;
+  box-shadow: 22px 16px 19px black;
 }
 
 .App-header {
+  width: 90%;
   margin-top: 50px;
   font-size: 18px;
   display: flex;
@@ -45,60 +45,40 @@
   justify-self: center;
   flex-direction: column;
   justify-items: center;
-  width: 50%;
+  width: 80%;
 }
 
 
+.HeaderSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 
 /* Desktop to Tablet*/
-@media(max-width: 2000px){
-  .App-header{
-    margin-left: 400px;
-  }
-  .About-Me {
-    margin-left: 400px;
-  }
-}
 
-@media(max-width: 1700px){
-  .App-header h1 {
-    font-size: 50px;
-  }
-  .About-Me {
-    font-size: 20px;
-  }
-}
+
 
 @media(max-width: 1400px){
+  .HeaderSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1 {
+    width: 80%;
+  }
+
   .Profile-Picture {
-    width: 200px;
-    height: 270px;
+    margin-top: 25px;
+    width: 300px;
     margin-top: 25px;
     margin-left: 25px;
   }
-  .App-header{
-    margin-left: 200px;
-  }
-  .About-Me {
-    margin-left: 250px;
-  }
 }
 
-@media(max-width: 1300px){
-  .App-header{
-    margin-left: 250px;
-  }
-}
 
-@media(max-width: 1200px){
-  .App-header{
-    margin-left: 250px;
-  }
-  .About-Me {
-    margin-left: 250px;
-  }
-}
 
 /* Phone*/
 @media(max-width: 900px){
@@ -108,35 +88,11 @@
     align-items: center;
   }
 
-  .Profile-Picture {
-    margin: 0 auto;
-    clear: both;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-top: 25px;
-  }
-
   .App-header{
     margin: 20px 20px 0 20px;
     width: 85%;
   }
   .App-header h1 {
     font-size: 36px;
-  }
-
-  .About-Me {
-    margin: 0 10px;
-    padding: 0;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .About-Me p {
-    font-size: 18px;
-    margin-left: 0;
-    margin: 20px 0 0 0;
   }
 }

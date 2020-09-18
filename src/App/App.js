@@ -21,16 +21,17 @@ function App() {
   return (
     <div className="Body-Content">
       <div className="App">
-          <img src={ProfilePicture} className="Profile-Picture" />
-        <header className="App-header">
-          <h1>
-            Web Application Developer
-            <br />
-          </h1>
-        </header>
-
-        <AboutMe className='AboutMeClass' />
-
+        <div className='HeaderSection'>
+          <div className='ProfilePictureContainer'>
+            <img src={ProfilePicture} className="Profile-Picture" />
+          </div>
+          <header className="App-header">
+            <h1>
+              Web Application Developer
+            </h1>
+            <AboutMe className='AboutMeClass' />
+          </header>
+      </div>
         {/* <br /><br /><br /><br /> */}
 
         <LinksHolder />

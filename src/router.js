@@ -35,9 +35,9 @@ const Router = props => {
       <Route path="/Pitch-Perfect" component={PitchPerfect} />
       <Route path="/requests/website" component={WebsiteRequest} />
       <Route path="/Privacy-Policy" component={PrivacyPolicy} />
-      <Route path="/MVCCodingCourse" 
+      <Route path="/MVCCodingCourse"
         component={() => { 
-          window.location.href = 'https://www.udemy.com/course/building-a-full-website-in-c-sharp/?couponCode=9633C98C893D5AD6348E'; 
+          window.location.href = 'https://www.udemy.com/course/building-a-full-website-in-c-sharp/?couponCode=4AC350DC7D00EA0FB63C'; 
           return null;
         }}
       />

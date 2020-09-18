@@ -2,7 +2,9 @@ import React from 'react';
 import ProfileLink from '../ProfileLink';
 import '../App/App.css';
 import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenShot.JPG';
+import CaigoyCreations from '../images/CaigoyCreationsSite.JPG'
 import PARAPic from './PanAsian.jpg';
+import CloudCards from '../images/CloudCards.JPG'
 
 function Websites() {
     return (
@@ -16,6 +18,7 @@ function Websites() {
                 text="Caigoy Creations"
                 IsExternal="true"
                 target="_blank"
+                pic={CaigoyCreations}
             />
             <ProfileLink 
                 link="http://www.pan-asianrecovery.org" 
@@ -24,8 +27,13 @@ function Websites() {
                 IsExternal="true"
                 target="_blank"
             />
-            <ProfileLink link="something" text="KBCrush Media" />
-            <ProfileLink link="something" text="Art World" />
+            <ProfileLink
+                link='https://cloudcards.net/view/1/FJ7j1vB0wAVLlOtu5MQrToDmOozvOVGj'
+                text='Cloud Cards'
+                target="_blank"
+                IsExternal="true"
+                pic={CloudCards}
+            />
         </div>
     </div>
     );

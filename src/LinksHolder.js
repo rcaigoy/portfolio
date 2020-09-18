@@ -5,7 +5,8 @@ import GitHubPicture from './images/GitHub.jpg';
 import AboutRyanThumbnail from './images/AboutRyanThumbnail.jpg';
 import AboutRyan from './About-Ryan/about-ryan';
 import WebsitesPic from './images/Websites.jpg';
-import CaigoyCreationsProductDesigner from './images/CaigoyCreationsProductDesigner.JPG'
+//import CaigoyCreationsProductDesigner from './images/CaigoyCreationsProductDesigner.JPG'
+import CaigoyCreationsSite from './images/CaigoyCreationsSite.JPG'
 import Blogs from './images/Blogs.jpg'
 import Resume from './images/Resume.JPG'
 import Hobbies from './images/Hobbies.jpg'
@@ -29,7 +30,7 @@ function LinksHolder(){
                 <ProfileLink 
                     link="/Websites" 
                     text="Websites"
-                    pic={CaigoyCreationsProductDesigner}
+                    pic={CaigoyCreationsSite}
                 />
                 <ProfileLink 
                     link="https://github.com/rcaigoy"

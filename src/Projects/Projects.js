@@ -3,6 +3,7 @@ import ProfileLink from '../ProfileLink';
 import InteractivePortfolioPicture from '../images/InteractivePortfolioScreenShot.JPG';
 import CaigoyCreationsProductDesigner from '../images/CaigoyCreationsProductDesigner.JPG'
 import PitchPerfect from '../images/PitchPerfect.jpg'
+import CloudCardsApp from '../images/CloudCardsApp.JPG'
 
 function Project(){
     return (
@@ -20,6 +21,13 @@ function Project(){
             <ProfileLink link="http://caigoycreations.com/products/create"
                 pic={CaigoyCreationsProductDesigner}
                 text="CC Product Designer"
+                IsExternal="true"
+            />
+
+            <ProfileLink
+                link='http://onelink.to/7gwxaa'
+                pic={CloudCardsApp}
+                text="Cloud Cards App"
                 IsExternal="true"
             />
 
